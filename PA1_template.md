@@ -76,6 +76,7 @@ sum_steps_d$Date <- as.Date(sum_steps_d$Date)
 g <- ggplot(sum_steps_d, aes(Date, Steps))
 g <- g + geom_bar(stat="identity")
 g <- g + scale_x_date()
+g <- g + labs(y="Total Number of Steps")
 print(g)
 ```
 
